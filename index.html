@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="Landing.css"> 
+</head>
+<body>
+  <section class="banner" id="sec">
+  <header >
+    <a class="logo" href="#">Portfolio</a>
+    <div id="toggle" onclick="toggle()"></div>
+   </header>
+ 
+   <div class="container">
+    <div class="card">
+      <div class="glassmorphic">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+      </div>
+          <div class="contentLanding">
+            <div class="backgImg"></div>
+            <center>
+           <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 2em;">Hey! I'am</h2>
+           <br>
+           <h2><span style="font-family: 'Times New Roman', Times, serif; color: rgb(90, 132, 156); font-size:.75em;">Swarali Purandare</span></h2></center>
+           <p style=" color: rgb(90, 132, 156); font-size:1.05em;">I am a third year student pursuing Electronics and Telecommunication engineering from VIT, Pune and a budding software engineer. I like to explore new technologies and build exciting projects</p>
+           
+          </div>
+    </div>
+   </div>
+  <br>
+  <br>
+
+  <ul class="sci">
+<li><a href="https://www.linkedin.com/in/swarali-purandare-042540183/" ><img src="facebook.png"></a></li>
+<li><a href="https://github.com/swarali15" ><img src="twitter.png"></a></li>
+<li><a href="https://www.linkedin.com/in/swarali-purandare-042540183/" ><img src="linkedin.png"></a></li>
+
+  </ul>
+  </section>
+  <div id="navigation">
+   <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#academics">Academics</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </div>
+
+  <div class="projects " id="projects">
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Web development</button>
+      <button class="btn" onclick="filterSelection('cars')"> Computer vision ,ML and AI</button>
+      <button class="btn" onclick="filterSelection('people')">Electronics, IOT</button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="projectsSpace">
+    <div class="row">
+      <div class="column nature">
+        <div >
+          <div class="containerACA">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                <h4>Version Control Website</h4>
+                    <p>A local version control website having basic functionalities of github.  </p>
+                    </div>
+              </div>
+              <div class="face face2"><h2>01</h2></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="column nature">
+        <div>
+          <div >
+            <div class="containerACA">
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <h4>React Quiz App</h4>
+                    <p>A simple project to get hands-on learning experience and practice of React skills</p>
+                      </div>
+                </div>
+                <div class="face face2"><h2>02</h2></div>
+              </div>
+              
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      <div class="column nature">
+        <div >
+          <div class="containerACA">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+          
+                  <h4>Weather Forecast website</h4>
+                  <p>Fetching weather data from openweather API </p>
+                </div>
+              </div>
+              <div class="face face2"><h2>03</h2></div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    
+      <div class="column cars">
+        <div >
+          <div class="containerACA">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+          
+                  <h4>Traffic Rule voilation Detection</h4>
+                  <p>Detection of car travelling accross zebra crossing during Red signal using image processing</p>
+                </div>
+              </div>
+              <div class="face face2"><h2>01</h2></div>
+            </div>
+            
+          </div>
+        </div>
+   
+      </div>
+      <div class="column cars">
+        <div >
+          <div class="containerACA">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+          
+                  <h4>Outdoor Naigation Assistant for Visually Impaired</h4>
+                  <p>Trained and Tested R-CNN and Yolo models. Successfully detected obstacles and gave real time feedback to users. </p>
+                </div>
+              </div>
+              <div class="face face2"><h2>02</h2></div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="column cars">
+        <div >
+          <div class="containerACA">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+          
+                  <h4>OCR</h4>
+                  <p>Optical character recognition project in Android phone</p>
+                </div>
+              </div>
+              <div class="face face2"><h2>03</h2></div>
+            </div>
+            
+          </div>
+        </div>
+      
+      </div>
+    
+      <div class="column people">
+        <div >
+          <div class="containerACA">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+          
+                  <h4>Smart Car parking System</h4>
+                  <p>Empty parking slots are displayed on the website. Used Arduino Mega, ESP8266, Ultrasonnic sensor</p>
+                </div>
+              </div>
+              <div class="face face2"><h2>01</h2></div>
+            </div>
+            
+          </div>
+        </div>
+       
+      </div>
+      <div class="column people">
+        <div >
+          <div class="containerACA">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+         <h4>Traffic density based traffic signal conditioning</h4>
+                  <p>Used Arduino Mega and ultrasonnic sensors, LEDS, etc</p>
+                </div>
+              </div>
+              <div class="face face2"><h2>02</h2></div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="column people">
+        <div >
+          <div class="containerACA">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+          
+                  <h4>Finger Print Voting Machine</h4>
+                  <p>Used Adafruit finger print sensor and Aruino Uno</p>
+                </div>
+              </div>
+              <div class="face face2"><h2>03</h2></div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    <!-- END GRID -->
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<div class="academics" id="academics">
+  <br>
+  <center><h2 style="color: #fff;">Academic Timeline</h2></center>
+  <section id="timeline">
+    <article>
+      <div class="inner">
+        <span class="date">
+          
+          <span class="month">May</span>
+          <span class="year">2016</span>
+        </span>
+        <h2>Class 10</h2>
+        <p>Passed out from Kendriya Vidyalaya Southern Command, Pune Scored 10 pointer 93%</p>
+      </div>
+    </article>
+    <article>
+      <div class="inner">
+        <span class="date">
+          
+          <span class="month">May</span>
+          <span class="year">2018</span>
+        </span>
+        <h2>Class 12</h2>
+        <p>Passed out from Kendriya Vidyalaya Southern Command, Pune Scored 88.4%</p>
+      </div>
+    </article>
+    <article>
+      <div class="inner">
+        <span class="date">
+          
+          <span class="month">May</span>
+          <span class="year">2018</span>
+        </span>
+        <h2>Summer Intern</h2>
+        <p>Summer internship at The Robotics Forum, VIT Pune</p>
+      </div>
+    </article>
+    <article>
+      <div class="inner">
+        <span class="date">
+          
+          <span class="month">May</span>
+          <span class="year">2019-20</span>
+        </span>
+        <h2>Workshop instructor and Web developer</h2>
+        <p>Workshop instructor and Web developer at The Robotics Forum, VIT Pune</p>
+      </div>
+    </article>
+    <article>
+      <div class="inner">
+        <span class="date">
+          
+          <span class="month">Jan</span>
+          <span class="year">2021</span>
+        </span>
+        <h2>3rd Year B.Tech</h2>
+        <p>Pursuing Electronics and Telecommunication engineering from VIT Pune. Current Semister CGPA is 8.7/10</p>
+      </div>
+    </article>
+    <article>
+      <div class="inner">
+        <span class="date">
+          
+          <span class="month">Jan</span>
+          <span class="year">2021</span>
+        </span>
+        <h2>Web developer Intern</h2>
+        <p>Web developer Intern at Campus24</p>
+      </div>
+    </article>
+  
+   
+  </section>
+</div>
+
+<div class="contact" id="contact">
+  <div class="profileDetailsBody" >
+                        
+    <div class="profileDetailsRight">
+    <div class="profileDetails">
+    
+      <div class="containercontact">
+        <div style="text-align:center">
+          <h2>Contact </h2>
+          <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div
+    class="login-page-body mt-4 pt-5"
+    style="background-image: url(contact.svg); background-repeat: no-repeat; background-size: 40%; background-position:left;;" >
+    <div class="rowcontact">
+      <div class="columncontact">
+        
+      </div>
+      <div class="columncontact">
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    </div>
+       </div>
+  
+  </div>
+    </div>
+    </div>
+ 
+  </div>
+
+
+</body>
+<script type="text/javascript">
+function toggle()
+{
+ var sec=document.getElementById("sec");
+ var nav=document.getElementById("navigation");
+ sec.classList.toggle('active')
+ nav.classList.toggle('active')
+}
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</html>
